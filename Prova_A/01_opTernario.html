@@ -13,9 +13,12 @@
     */
 
     //Entrada
-
-    
+    const atraso = Number(prompt("informe quantos dias de atraso estão seus livros"));
     //Processamento
+    (atraso == 0) ? alert(`Não houve nenhum atraso, portanto, o valor da multa é ${(atraso)} reais`) 
+    : (atraso > 0 && atraso <= 5) ? alert(`Sua multa ficou em ${(atraso * 1.50)}`) 
+    : (atraso > 5 && atraso <= 10) ? alert(`Sua multa ficou em ${(atraso * 2)}`)
+    : alert(`Sua multa ficou em ${atraso * 2.50}`);
 
     
     //Saída

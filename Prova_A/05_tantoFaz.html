@@ -13,9 +13,33 @@
     */
 
     //Entrada
-
-    
+    const combusitivel = Number(prompt('Informe a quantidade de combustivel que deseja colocar'))
+    const tipocombustivel = prompt('Informe o tipo do combustível, utilizando G (gasolina), E (etanol), D (diesel) e N (gnv)').toLowerCase()
+    let valortotal
     //Processamento
+    switch (tipocombustivel) {
+        case "g":
+            valortotal = combusitivel * 6.19
+            break;
+            case "e":
+             valortotal = combusitivel * 5.29
+            break;
+            case "d":
+            valortotal = combusitivel * 5.09
+            break;
+            case "n":
+                valortotal = combusitivel * 4.709
+        default:
+            alert(`opção inválida`)
+            break;
+    }
+    (valortotal > 150) ? alert(`O valor a ser a pago será de ${valortotal - (valortotal * 0.10)}`)
+     : alert(`O valor a ser pago é ${valortotal} `)
+            
+   
+ 
+    
+    
 
     
     //Saída

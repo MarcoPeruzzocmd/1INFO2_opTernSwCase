@@ -11,11 +11,12 @@
     */
 
     //Entrada
-
-
+    const precoCarro = Number(prompt('Informe o preço do carro que deseja comprar'));
+    const quantidadeparcelas = prompt('Informe a quantidade de parcelas que deseja financiar');
     //Processamento
-
-    
+    (quantidadeparcelas == 1) ? alert(`O valor que você vai pagar no carro é ${precoCarro}`) 
+    : (quantidadeparcelas > 1 && quantidadeparcelas <= 12) ? alert(`O valor que você irá pagar no carro é ${precoCarro + (precoCarro* 0.07)} reais`)
+    : alert(`O valor que você irá pagar no carro é ${precoCarro + (precoCarro * 0.14)} reais`);
     //Saída
 
     /*
